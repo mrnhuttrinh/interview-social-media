@@ -1,0 +1,20 @@
+.user-view {
+  position:relative;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  padding: 5px;
+  .avatar {
+    // margin-top: 25px;
+  }
+  .view-link {
+    display: block;
+    .detail, .posts, .albums {
+      margin: 0px;
+      margin-right: 15px;
+      color: rgb(33, 102, 250);
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+}

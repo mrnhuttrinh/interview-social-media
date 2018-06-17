@@ -1,0 +1,13 @@
+.post-view {
+  margin-top: 20px;
+  .post-content {
+    position: relative;
+    .view-comment {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      color: rgb(13, 128, 204);
+      cursor: pointer;
+    }
+  }
+}
