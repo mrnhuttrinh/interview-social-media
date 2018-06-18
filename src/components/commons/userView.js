@@ -80,7 +80,7 @@ class UserView extends React.Component {
 }
 
 UserView.contextTypes = {
-  history: PropTypes.func,
+  history: PropTypes.object,
 };
 
 export default UserView;

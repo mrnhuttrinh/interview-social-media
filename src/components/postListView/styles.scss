@@ -1,5 +1,8 @@
 .post-view {
   margin-top: 20px;
+  &:first {
+    margin-top: 0px;
+  }
   .post-content {
     position: relative;
     .view-comment {

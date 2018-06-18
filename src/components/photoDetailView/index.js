@@ -55,7 +55,7 @@ class PhotoDetailView extends React.Component {
 }
 
 PhotoDetailView.contextTypes = {
-  history: PropTypes.func,
+  history: PropTypes.object,
 };
 
 
