@@ -14,6 +14,7 @@ export const CREATE_COMMENT = 'comment/CREATE_COMMENT';
 export const UPDATE_COMMENT = 'comment/UPDATE_COMMENT';
 export const DELETE_COMMENT = 'comment/DELETE_COMMENT';
 export const GET_POST_COMMENTS = 'comment/GET_POST_COMMENTS';
+export const UPDATE_LIST_COMMENT_UI = 'comment/UPDATE_LIST_COMMENT_UI';
 
 export const GET_PHOTO = 'photo/GET_PHOTO';
 export const GET_PHOTO_LIST = 'photo/GET_PHOTO_LIST';

@@ -38,7 +38,7 @@ class AlbumView extends React.Component {
   }
 }
 AlbumView.contextTypes = {
-  history: PropTypes.func,
+  history: PropTypes.object,
 };
 
 export default AlbumView;

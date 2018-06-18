@@ -42,7 +42,7 @@ class UserDetailView extends React.Component {
           <UserDetailTab match={this.props.match} />
         </Tab>
         <Tab eventKey={'posts'} title="Posts">
-          <PostListView match={this.props.match} />
+          <PostListView match={this.props.match} addButton />
         </Tab>
         <Tab eventKey={'albums'} title="Albums">
           <AlbumListView match={this.props.match} />

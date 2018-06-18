@@ -30,5 +30,5 @@ export default class GalleryView extends React.Component {
 }
 
 GalleryView.contextTypes = {
-  history: PropTypes.func,
+  history: PropTypes.object,
 };
