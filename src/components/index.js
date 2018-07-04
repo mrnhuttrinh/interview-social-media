@@ -8,6 +8,7 @@ import PostDetailView from './postDetailView';
 import PostListView from './postListView';
 import AlbumListView from './albumListView';
 import PhotoDetailView from './photoDetailView';
+import DialogView from './dialogView';
 
 export {
   HomeView,
@@ -18,7 +19,8 @@ export {
   PostDetailView,
   PostListView,
   AlbumListView,
-  PhotoDetailView
+  PhotoDetailView,
+  DialogView
 };
 
 // export commons

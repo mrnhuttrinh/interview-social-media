@@ -34,7 +34,7 @@ class PostListView extends React.Component {
     const style = { position: 'relative' };
     return (
       <div style={style}>
-        <Loading loading={this.props.requesting} />
+        <Loading loading={this.props.postList.get('requesting')} />
         {
           this.props.addButton && (
             <ButtonToolbar>
@@ -55,7 +55,6 @@ PostListView.contextTypes = {
 
 const mapStateToProps = (state) => ({
   postList: state.post.get('list'),
-  requesting: state.post.get('requesting')
 });
 
 const mapDispatchToProps = dispatch => ({

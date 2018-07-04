@@ -1,9 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import _ from 'lodash';
-import NewPostView from '../newPostView';
-import EditPostView from '../editPostView';
-import DeletePostView from '../deletePostView';
+import PropTypes from 'prop-types';
+import NewPostView from './newPostView';
+import EditPostView from './editPostView';
+import DeletePostView from './deletePostView';
 
 export default class DialogView extends React.Component {
   constructor(props, context) {
@@ -14,14 +14,25 @@ export default class DialogView extends React.Component {
     };
   }
   componentWillReceiveProps(nextProps) {
-    this.setState({
-      dialogName: this.getDialogName(nextProps),
-    });
+    if (
+      this.props.location.pathname !== nextProps.location.pathname ||
+      this.props.location.search !== nextProps.location.search
+    ) {
+      this.setState({
+        dialogName: this.getDialogName(nextProps),
+      });
+    }
   }
   getDialogName(props) {
     const { location } = props;
     const params = new URLSearchParams(location.search);
     return params.get('dialog');
+  }
+  adjustQueryString(queryString) {
+    if (!_.isEmpty(queryString)) {
+      return `&${queryString}`;
+    }
+    return '';
   }
   handleClose(e, newRedirectURL) {
     const {
@@ -31,7 +42,7 @@ export default class DialogView extends React.Component {
       const { location } = this.props;
       const params = new URLSearchParams(location.search);
       params.delete('dialog');
-      const newURL = `${location.pathname}${params.toString()}`;
+      const newURL = `${location.pathname}${this.adjustQueryString(params.toString())}`;
       history.push(newURL);
     } else {
       history.push(newRedirectURL);

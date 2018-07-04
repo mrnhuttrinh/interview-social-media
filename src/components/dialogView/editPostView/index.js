@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Modal, Button, Form, FormGroup, Col, FormControl, ControlLabel } from 'react-bootstrap';
-import actions from '../../actions';
+import actions from '../../../actions';
 
 class EditPostView extends React.Component {
   constructor(props, context) {
