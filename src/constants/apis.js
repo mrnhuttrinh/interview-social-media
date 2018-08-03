@@ -1,3 +1,7 @@
+/**
+ * Apis name
+ */
+
 const PREFIX_API = 'https://jsonplaceholder.typicode.com';
 
 

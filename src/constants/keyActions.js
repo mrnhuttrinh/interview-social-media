@@ -1,3 +1,7 @@
+/**
+ * Key constant for actions and reducers api
+ */
+
 export const MAIN_LOADING_START = '@@mainLoading/MAIN_LOADING_START';
 export const MAIN_LOADING_END = '@@mainLoading/MAIN_LOADING_END';
 export const MAIN_LOADING_ERROR = '@@mainLoading/MAIN_LOADING_ERROR';
@@ -33,5 +37,4 @@ export const GET_USER_LIST = 'user/GET_USER_LIST';
 export const CREATE_USER = 'user/CREATE_USER';
 export const UPDATE_USER = 'user/UPDATE_USER';
 export const DELETE_USER = 'user/DELETE_USER';
-
 
