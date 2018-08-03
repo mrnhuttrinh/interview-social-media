@@ -13,3 +13,7 @@ export default {
 };
 
 export * from './mainLoading';
+
+/**
+ * Actions work with api call
+ */
