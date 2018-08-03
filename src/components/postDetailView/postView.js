@@ -16,7 +16,6 @@ class PostView extends React.Component {
     history.push(path);
   }
   onEditPost() {
-    const { post = {} } = this.props;
     const { location, history } = this.context;
     const params = new URLSearchParams(location.search);
     params.set('dialog', 'edit-post');
@@ -24,7 +23,6 @@ class PostView extends React.Component {
     history.push(newURL);
   }
   onDeletePost() {
-    const { post = {} } = this.props;
     const { location, history } = this.context;
     const params = new URLSearchParams(location.search);
     params.set('dialog', 'delete-post');

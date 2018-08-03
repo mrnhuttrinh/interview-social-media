@@ -26,7 +26,6 @@ export const getOne = async (id) => {
 export const getList = (postfixUrl = '') => {
   return {
     type: GET_POST_LIST,
-    showLoading: true,
     fetchConfig: {
       path: `${API_GET_POST_LIST}${postfixUrl}`,
       params: {

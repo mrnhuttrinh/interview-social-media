@@ -1,9 +1,8 @@
 import React from 'react';
-import _ from 'lodash';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Modal, Button, Form, FormGroup, Col, FormControl, ControlLabel } from 'react-bootstrap';
-import actions from '../../actions';
+import actions from '../../../actions';
 
 class NewPostView extends React.Component {
   constructor(props) {
@@ -46,7 +45,7 @@ class NewPostView extends React.Component {
                 User Name
               </Col>
               <Col sm={10}>
-                <FormControl disabled={createPost.get('requesting')} disabled type="text" placeholder="user name" value={user.name} />
+                <FormControl disabled={createPost.get('requesting')} type="text" placeholder="user name" value={user.name} />
               </Col>
             </FormGroup>
 

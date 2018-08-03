@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { Media, Button, Form, FormGroup, Col, FormControl, ControlLabel, InputGroup } from 'react-bootstrap';
+import { Media, Button, Form, FormGroup, Col, FormControl, ControlLabel } from 'react-bootstrap';
 import actions from '../../actions';
 
 class NewCommentView extends React.Component {

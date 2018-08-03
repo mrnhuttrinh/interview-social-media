@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import _ from 'lodash';
 import { bindActionCreators } from 'redux';
 import actions from '../../actions';
-import { ButtonToolbar, ButtonGroup, Media, Button, Form, FormGroup, Col, Glyphicon, FormControl, ControlLabel, InputGroup } from 'react-bootstrap';
+import { ButtonToolbar, ButtonGroup, Media, Button, Form, FormGroup, Col, Glyphicon, FormControl, ControlLabel } from 'react-bootstrap';
 
 class CommentView extends React.Component {
   constructor(props) {
@@ -63,7 +63,6 @@ class CommentView extends React.Component {
     const { comment } = this.props
     this.props.actions.comment.remove(comment.id).then(() => {
       // update comment list
-      const createCommentData = this.props.deleteComment.get('data');
       const commentListData = Object.assign([], this.props.commentList.get('data') || []);
       _.remove(commentListData, c => c.id === comment.id);
       this.props.actions.comment.updateListCommentUI(commentListData);

@@ -2,8 +2,8 @@ import React from 'react';
 import _ from 'lodash';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { Modal, Button, Form, FormGroup, Col, FormControl, ControlLabel } from 'react-bootstrap';
-import actions from '../../actions';
+import { Modal, Button } from 'react-bootstrap';
+import actions from '../../../actions';
 
 class DeletePostView extends React.Component {
   constructor(props) {
